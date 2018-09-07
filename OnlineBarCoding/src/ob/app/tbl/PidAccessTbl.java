@@ -35,7 +35,7 @@ public class PidAccessTbl {
 				List_oL.add(bean);
 			}
 		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(null, "PIDAccessTbl.getAllPIDsAccess " + e);
+			JOptionPane.showMessageDialog(null, "PIDAccessTbl.getAllPIDsAccess  " + e);
 			return null;
 		} finally {
 			if (rs != null) {
