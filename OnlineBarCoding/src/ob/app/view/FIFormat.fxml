@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="840.0" prefWidth="1262.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ob.app.view.FIFormatController">
+   <children>
+      <GridPane layoutX="12.0" layoutY="87.0" prefHeight="131.0" prefWidth="839.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="850.0" minWidth="835.0" prefWidth="850.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="708.0" minWidth="10.0" prefWidth="11.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="55.0" minHeight="9.0" prefHeight="55.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblTireSize" prefHeight="55.0" prefWidth="855.0" style="-fx-background-color: gold;" text="---" textFill="#0400ff">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="lblBrnSWMsg" prefHeight="55.0" prefWidth="616.0" style="-fx-background-color: gold;" text="---" textFill="#0011ff">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTireType" prefHeight="55.0" prefWidth="232.0" style="-fx-background-color: cyan;" text="---" textFill="#ff0f02">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <Button fx:id="btnEnter" layoutX="5.0" layoutY="470.0" mnemonicParsing="false" onAction="#enterButton" prefHeight="66.0" prefWidth="392.0" style="-fx-background-color: limegreen;" text="A/A+ Tire" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="470.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <GridPane gridLinesVisible="true" layoutX="5.0" layoutY="182.0" prefHeight="266.0" prefWidth="816.0" AnchorPane.leftAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="45.0" minWidth="45.0" prefWidth="45.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="1">
+               <children>
+                  <Label text="S">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnLDS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T1" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnBOS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T2" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnMMS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T12" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="12">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="MM">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnSBS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T11" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="11">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="SB">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnSTPIS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T10" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="10">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="STPI">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnSPEUS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T9" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="9">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="SPEU">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnTFS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T8" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="8">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="TF">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnMSS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T7" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="7">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="MS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnSFMS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T6" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="6">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="SFM">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnTRDS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T5" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="5">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="TRD">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="4">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="BFM">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnBFMS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T4" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="3">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="BG">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="2">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="BO">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="1">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="LD">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnBGS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T3" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="0.0" prefWidth="45.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="13">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="DNM">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="0.0" prefWidth="45.0" GridPane.columnIndex="13" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnDNMS" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T13" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="0.0" prefWidth="45.0" style="-fx-background-color: CYAN;" GridPane.columnIndex="14">
+               <children>
+                  <Label style="-fx-background-color: CYAN;" text="OTHER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="0.0" prefWidth="45.0" GridPane.columnIndex="14" GridPane.rowIndex="1">
+               <children>
+                  <RadioButton fx:id="rbtnOther" mnemonicParsing="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="T14" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="57.0" prefWidth="101.0" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="13" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnDNMM" mnemonicParsing="false" toggleGroup="$T13">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnMMM" mnemonicParsing="false" toggleGroup="$T12">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnSBM" mnemonicParsing="false" toggleGroup="$T11">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnSTPIM" mnemonicParsing="false" toggleGroup="$T10">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnSPEUM" mnemonicParsing="false" toggleGroup="$T9">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnTFM" mnemonicParsing="false" toggleGroup="$T8">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnMSM" mnemonicParsing="false" toggleGroup="$T7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnSFMM" mnemonicParsing="false" toggleGroup="$T6">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnTRDM" mnemonicParsing="false" toggleGroup="$T5">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnBFMM" mnemonicParsing="false" toggleGroup="$T4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnBGM" mnemonicParsing="false" toggleGroup="$T3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnBOM" mnemonicParsing="false" toggleGroup="$T2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="rbtnLDM" mnemonicParsing="false" toggleGroup="$T1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: CYAN;" GridPane.rowIndex="2">
+               <children>
+                  <Label text="M">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="13" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnDNML" mnemonicParsing="false" toggleGroup="$T13">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnMML" mnemonicParsing="false" toggleGroup="$T12">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnSBL" mnemonicParsing="false" toggleGroup="$T11">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnSTPIL" mnemonicParsing="false" toggleGroup="$T10">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnSPEUL" mnemonicParsing="false" toggleGroup="$T9">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnTFL" mnemonicParsing="false" toggleGroup="$T8">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnMSL" mnemonicParsing="false" toggleGroup="$T7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnSFML" mnemonicParsing="false" toggleGroup="$T6">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnBFML" mnemonicParsing="false" toggleGroup="$T4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnBOL" mnemonicParsing="false" toggleGroup="$T2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnLDL" mnemonicParsing="false" toggleGroup="$T1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.rowIndex="3">
+               <children>
+                  <Label text="L">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnBGL" mnemonicParsing="false" toggleGroup="$T3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="rbtnTRDL" mnemonicParsing="false" toggleGroup="$T5">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnLD" mnemonicParsing="false" onAction="#clsLD" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="14" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnOther" mnemonicParsing="false" onAction="#clsOther" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="13" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnDNM" mnemonicParsing="false" onAction="#clsDNM" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnMM" mnemonicParsing="false" onAction="#clsMM" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnSB" mnemonicParsing="false" onAction="#clsSB" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnSTPI" mnemonicParsing="false" onAction="#clsSTPI" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnSPEU" mnemonicParsing="false" onAction="#clsSPEU" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnTF" mnemonicParsing="false" onAction="#clsTF" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnMS" mnemonicParsing="false" onAction="#clsMS" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnSFM" mnemonicParsing="false" onAction="#clsSFM" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnTRD" mnemonicParsing="false" onAction="#clsTRD" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnBFM" mnemonicParsing="false" onAction="#clsBFM" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnBG" mnemonicParsing="false" onAction="#clsBG" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnBO" mnemonicParsing="false" onAction="#clsBO" prefHeight="32.0" prefWidth="34.0" />
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+      <Button fx:id="btnDownGrade" layoutX="416.0" layoutY="470.0" mnemonicParsing="false" onAction="#ShowBER" prefHeight="66.0" prefWidth="302.0" style="-fx-background-color: khaki;" text="Down Grade Tire" AnchorPane.topAnchor="470.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblMoldNo" alignment="CENTER_RIGHT" layoutX="581.0" layoutY="115.0" prefHeight="55.0" prefWidth="253.0" style="-fx-background-color: CORNSILK;" text="---" textAlignment="RIGHT" textFill="#2eb81c" AnchorPane.leftAnchor="581.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSN" alignment="CENTER_RIGHT" layoutX="5.0" layoutY="115.0" prefHeight="55.0" prefWidth="203.0" style="-fx-background-color: CORNSILK;" text="---" textAlignment="RIGHT" textFill="#2eb81c" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="cmdChangePID" layoutX="273.0" layoutY="115.0" mnemonicParsing="false" onAction="#showPIDChangeTbl" prefHeight="66.0" prefWidth="280.0" text="Change&#10;PID" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <AnchorPane fx:id="apPIDChange" layoutX="14.0" layoutY="543.0" prefHeight="287.0" prefWidth="1226.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="553.0">
+         <children>
+            <GridPane hgap="2.0" layoutX="22.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="75.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="149.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="57.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="98.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="74.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="73.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="147.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="147.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="132.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="txtFFPID" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtFFSB" prefHeight="31.0" prefWidth="138.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtFFLT" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtFFCon" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtFFRS" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtFFTT" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtFFBR" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtFFSWMSG" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Tire Size" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Label text="Lug Type" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <Label text="Config" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4">
+                     <children>
+                        <Label text="Rim Size" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6">
+                     <children>
+                        <Label text="Brand Name" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7">
+                     <children>
+                        <Label text="SW Msg" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="30.0" prefWidth="198.0" GridPane.columnIndex="1" />
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5">
+                     <children>
+                        <Label text="Tire Type" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Label text="PID" />
+                     </children>
+                  </StackPane>
+               </children>
+            </GridPane>
+            <TableView fx:id="tblPid" layoutY="72.0" prefHeight="144.0" prefWidth="1013.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="72.0">
+               <columns>
+                  <TableColumn fx:id="clmnPid" prefWidth="75.0" text="PID" />
+                  <TableColumn fx:id="clmnSb" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="TireSize" />
+                  <TableColumn fx:id="clmnLt" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="Lug Type" />
+                  <TableColumn fx:id="clmnCon" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Config" />
+                  <TableColumn fx:id="clmnRs" prefWidth="75.0" text="RimSize" />
+                  <TableColumn fx:id="clmnTt" prefWidth="75.0" text="TireType" />
+                  <TableColumn fx:id="clmnBr" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="BN" />
+                  <TableColumn fx:id="clmnSw" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="SWMSG" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="955.0" layoutY="252.0" prefHeight="100.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

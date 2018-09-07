@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ob.app.view.FIFormatController">
+   <children>
+      <GridPane layoutX="12.0" layoutY="87.0" prefHeight="131.0" prefWidth="827.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="816.0" minWidth="10.0" prefWidth="816.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="708.0" minWidth="10.0" prefWidth="11.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="55.0" minHeight="9.0" prefHeight="55.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblTireSize" prefHeight="55.0" prefWidth="827.0" style="-fx-background-color: lime;" text="---" textFill="#0400ff">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="lblBrnSWMsg" prefHeight="55.0" prefWidth="616.0" style="-fx-background-color: lime;" text="---" textFill="#0011ff">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTireType" prefHeight="55.0" prefWidth="201.0" style="-fx-background-color: cyan;" text="---" textFill="#ff0f02">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane layoutX="14.0" layoutY="125.0" prefHeight="210.0" prefWidth="836.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="5.0" prefWidth="5.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <CheckBox fx:id="chbxSb" mnemonicParsing="false" text="Surface Bead" GridPane.columnIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxBnfm" mnemonicParsing="false" text="FM-POB" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxLd" mnemonicParsing="false" text="Lug Damage" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxTrd" mnemonicParsing="false" text="TR Damage" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxSpeu" mnemonicParsing="false" text="Speu" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxSfm" mnemonicParsing="false" text="Small FM">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxBg" mnemonicParsing="false" text="BackGrinding" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxTf" mnemonicParsing="false" text="Thikd Flash" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxBo" mnemonicParsing="false" text="Bead Out" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxMs" mnemonicParsing="false" text="Mold Slip" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxStpi" mnemonicParsing="false" text="STPI" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxBfm" mnemonicParsing="false" text="Base Flow Mark" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxMms" mnemonicParsing="false" text="MM Small" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxMmm" mnemonicParsing="false" text="MM Medium" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chbxMml" mnemonicParsing="false" text="MM Large" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </GridPane>
+      <Button layoutX="5.0" layoutY="440.0" mnemonicParsing="false" onAction="#insertFIReport" prefHeight="96.0" prefWidth="392.0" text="OK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
